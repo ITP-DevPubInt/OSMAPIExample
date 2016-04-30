@@ -2,7 +2,7 @@
  anytime you see "<%= param_name %>", it is supposed to be a string formatting operation!
  javascript does not natively support it, but templating engines exist.
 
- for this example, I'm using backbone because i loooooooove it (backbonejs.org)
+ for this example, I'm using underscore because i loooooooove it (underscorejs.org)
  I'm also using jQuery to handle the ajax request
 
  but you may always brute-force it, ie: 
@@ -28,7 +28,7 @@ function doAjaxSyncronousRequest(url_template, params) {
 function getLatLonFromAddress(address) {
 	// use OpenStreetMaps API
 	// OSM requires spaces to be replaced by '+'
-	
+
 	var params = {
 		address : address.replace(\ \g, '+')
 	};
